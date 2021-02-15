@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
-    <link href="Style.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+
     <title>Registration</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
                         <asp:Label ID="Label2" runat="server" Text="Login" Font-Size="XX-Large" ></asp:Label>
                     </asp:TableCell>
                     <asp:TableCell>
-                        <asp:TextBox ID="TextBox1" runat="server" BackColor="LightCyan" Width ="210px"></asp:TextBox>
+                        <asp:TextBox ID="TextBox1" runat="server" Width ="210px"></asp:TextBox>
                     </asp:TableCell>
                 </asp:TableRow>
                 
@@ -28,7 +29,7 @@
                         <asp:Label ID="Label3" runat="server" Text="Password" Font-Size="XX-Large" ></asp:Label>
                     </asp:TableCell>
                     <asp:TableCell>
-                        <asp:TextBox ID="TextBox2" runat="server" BackColor="LightCyan" Width ="210px"></asp:TextBox>
+                        <asp:TextBox ID="TextBox2" runat="server" Width ="210px"></asp:TextBox>
                     </asp:TableCell>
                 </asp:TableRow>
 
@@ -37,7 +38,7 @@
                         <asp:Label ID="Label4" runat="server" Text="Name" Font-Size="XX-Large" ></asp:Label>
                     </asp:TableCell>
                     <asp:TableCell>
-                        <asp:TextBox ID="TextBox3" runat="server" BackColor="LightCyan" Width ="210px"></asp:TextBox>
+                        <asp:TextBox ID="TextBox3" runat="server" Width ="210px"></asp:TextBox>
                     </asp:TableCell>
                 </asp:TableRow>
 
@@ -46,7 +47,7 @@
                         <asp:Label ID="Label5" runat="server" Text="Email" Font-Size="XX-Large" ></asp:Label>
                     </asp:TableCell>
                     <asp:TableCell>
-                        <asp:TextBox ID="TextBox4" runat="server" BackColor="LightCyan" Width ="210px"></asp:TextBox>
+                        <asp:TextBox ID="TextBox4" runat="server" Width ="210px"></asp:TextBox>
                     </asp:TableCell>
                 </asp:TableRow>
 
@@ -59,7 +60,7 @@
 
                 <asp:TableRow>
                     <asp:TableCell  HorizontalAlign ="Right">
-                        <asp:Button ID="Button2" runat="server" Height ="35" Width ="150" BackColor="LawnGreen" Text="Login Form" OnClick="Button2_Click"/>
+                        <asp:Button ID="Button2" runat="server" Height ="35" Width ="150" Text="Login Form" OnClick="Button2_Click"/>
                         </asp:TableCell>
                         <asp:TableCell  HorizontalAlign ="Right">
                          <asp:Button ID="Button1" runat="server" Height ="35" Width ="150" Text="Registration" OnClick ="Button1_Click" />

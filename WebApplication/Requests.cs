@@ -23,8 +23,8 @@ namespace WebApplication
         }
         private string GetDate()
         {
-            string[] nowArr = DateTime.Now.ToShortDateString().Split('.');
-            return nowArr[2] + "-" + nowArr[1] + "-" + nowArr[0];
+            string[] now = DateTime.Now.ToShortDateString().Split('.');
+            return now[2] + "-" + now[1] + "-" + now[0];
         }
         public void OpenConnection()
         {

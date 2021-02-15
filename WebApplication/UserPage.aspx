@@ -1,6 +1,5 @@
 ﻿<%@ Page Language="C#"  Async ="true" AutoEventWireup="true" CodeBehind="UserPage.aspx.cs" Inherits="WebApplication.UserPage" %>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -8,8 +7,8 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>   
     <link href="Style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="SelectAllBox.js"></script>
 </head>
     
@@ -31,7 +30,6 @@
         <table>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" 
             DataSourceID="SqlDataSource1" CellPadding="4" GridLines="None" >
-            <AlternatingRowStyle BackColor="White" />
 
             <Columns>
                 <asp:TemplateField>
@@ -51,7 +49,6 @@
                 <asp:BoundField DataField="Date_last_login" DataFormatString="{0:d}" HeaderText="Last_login_date" SortExpression="Date_last_login" />
                 <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />
             </Columns>
-            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
         </asp:GridView>
         </table>
 
